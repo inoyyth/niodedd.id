@@ -7,6 +7,8 @@
 
         <title>NiodeDD.id | Lawyers And Consultant</title>
 
+        <link rel="shortcut icon" href="<?php echo base_url('themes/template/assets/images/favicon.ico');?>" type="image/x-icon">
+        <link rel="icon" href="<?php echo base_url('themes/template/assets/images/favicon.ico');?>" type="image/x-icon">   
         <link href="<?php echo base_url();?>themes/template/assets/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">

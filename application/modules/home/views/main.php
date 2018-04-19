@@ -122,22 +122,22 @@
                 <div class="form-group">
                     <div class="col-sm-3">
                         <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-3">
-                        <select class="selectpicker" data-live-search="true" name="law" data-width="100%">
+                        <select class="selectpicker" data-live-search="true" name="law" data-width="100%" required>
                             <option data-tokens="family">Family Law</option>
                             <option data-tokens="business">Business Law</option>
                             <option data-tokens="civil">Civil Litigation</option>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-12">
-                        <textarea class="form-control" rows="8" placeholder="Case Description..." id="case-des" name="message"></textarea>
+                        <textarea class="form-control" rows="8" placeholder="Case Description..." id="case-des" name="message" required></textarea>
                         <!-- <input type="text" class="form-control" id="case-des" placeholder="Case Description..."> -->
                     </div>
                 </div>
