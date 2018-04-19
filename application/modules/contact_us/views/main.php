@@ -17,7 +17,7 @@
                     <?php echo $data['company'];?>
                 </p>
                 <ul>
-                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8888450375894!2d106.91226189983081!3d-6.145628995528553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ab31cd3655b%3A0x2c5d026ef19f5ab4!2sRT.4%2FRW.3%2C+Pegangsaan+Dua%2C+Klp.+Gading%2C+Kota+Jkt+Utara%2C+Daerah+Khusus+Ibukota+Jakarta!5e0!3m2!1sid!2sid!4v1523677754255" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                    <li><iframe src="<?php echo $data['map'];?>" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></li>
                     <li><span class="ion-android-call"></span><?php echo $data['telephone'];?></li>
                     <li><span class="ion-android-phone-portrait"></span><?php echo format_mobile_number($data['mobile']);?></li>
                     <li><span class="ion-paper-airplane"></span><a href="mailto:<?php echo $data['email'];?>"><?php echo $data['email'];?></a></li>
