@@ -68,7 +68,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("#gmaps").attr("src", '<?= $detail->map; ?>');
-        $("#blah1").attr("src", '<?= base_url(); ?>assets/elfinder-2.1.24/<?= $detail->image; ?>');
+        $("#blah1").attr("src", '<?= base_url(); ?>assets/elFinder-2.1.24/<?= $detail->image; ?>');
         $("#urlmaps").focusout(function () {
             var val = $(this).val();
             $("#gmaps").attr("src", val);

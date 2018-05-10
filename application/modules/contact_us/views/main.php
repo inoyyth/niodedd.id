@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <img src="assets/images/logo.png" alt="logo" class="contact-logo">
+                <img src="<?php echo base_url();?>adminuicon/assets/elFinder-2.1.24/<?php echo $data['image'];?>" alt="logo" class="contact-logo">
                 <p>
                     <?php echo $data['company'];?>
                 </p>
