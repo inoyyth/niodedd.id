@@ -20,7 +20,7 @@
  */
 date_default_timezone_set('Asia/Jakarta');
 
-define('ENVIRONMENT', 'production');
+define('ENVIRONMENT', 'development');
 /*
  * ---------------------------------------------------------------
  * ERROR REPORTING

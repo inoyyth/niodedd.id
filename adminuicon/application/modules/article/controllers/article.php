@@ -105,7 +105,7 @@ class Article extends MX_Controller{
         $description=$this->input->post('description');
         $status=$this->input->post('status');
         $thumbnail=$this->input->post('thumbnail');
-        $index_article=$this->input->post('index_article');
+        $index_article= $this->input->post('index_article') != null ? 1 : 0;
         if($index_article=="1"){
             $this->db->query("update article set index_article='0'");
         }
@@ -119,6 +119,7 @@ class Article extends MX_Controller{
                     "sys_create_user"=>$session_data['user_id'],
                     "article_image"=>$thumbnail,
                     "sys_create_date"=>$datetime);
+        // var_dump($data['index_article']);die;
         $this->db->insert("article",$data);
         
         redirect("article/search");

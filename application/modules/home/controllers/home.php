@@ -9,10 +9,10 @@ class Home extends MX_Controller{
     }
         
     function index(){
-		$data['section1'] = $this->m_home->getData('article',array('status'=>'Y','id_category'=>9,'id_subcategory'=>33),'sys_create_date','asc',3)->result_array();
-		$data['section2'] = $this->m_home->getData('article',array('status'=>'Y','id_category'=>9,'id_subcategory'=>39),'sys_create_date','asc',3)->result_array();
+		$data['section1'] = $this->m_home->getData('article',array('status'=>'Y','id_category'=>7,'id_subcategory'=>35),'sys_create_date','asc',3)->result_array();
+		$data['section2'] = $this->m_home->getData('article',array('status'=>'Y','id_category'=>7,'id_subcategory'=>37),'sys_create_date','asc',3)->result_array();
         $data['slider']=$this->m_home->getData('slider',array('status'=>'Y'),'sys_create_date','desc',10)->result_array();
-		$data['index_article']=$this->m_home->getData('article',array('index_article'=>'1'),'sys_create_date','desc',1)->row_array();
+		$data['index_article']=$this->m_home->getData('article',array('index_article'=>1),'sys_create_date','desc',1)->row_array();
 		$data['contact'] = $this->db->get('contact')->row_array();
 		$data['view']="main"; 
         $this->load->view('template',$data);
@@ -42,7 +42,8 @@ class Home extends MX_Controller{
 			'inquiry_message' => 'CONSULTATION ' . strtoupper($this->input->post('law')),
 			'description' => $this->input->post('message'),
 			'inquiry_address' => 'CONSULTATION',
-			'sys_create_date' => date('Y-m-d H:i:s')
+			'sys_create_date' => date('Y-m-d H:i:s'),
+			'sys_update_date' => date('Y-m-d H:i:s')
 		);
 
 		if($this->db->insert('customer_inquiry',$data)){

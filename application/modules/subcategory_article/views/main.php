@@ -1,6 +1,6 @@
 <?php if($title == 'client') { ?>
 <section id="clients" class="clients">
-	<div class="container-fluid">
+	<div class="container-fluid"> 
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="title-box">
@@ -19,7 +19,7 @@
 
 				foreach($subcategory_article as $k=>$v){ 
 			?>
-		   <div class="col-sm-2"> 
+		   <div class="<?php echo $k == 0 ? 'col-sm-offset-1 ' : ''; ?>col-sm-2"> 
 				<div class="client-box">
 					<a href="<?php echo $v['article_description'];?>">
 						<img class="img-responsive img-full" src="<?php echo base_url();?>adminuicon/assets/elFinder-2.1.24/<?php echo $v['article_image'];?>" alt="com">
@@ -34,7 +34,7 @@
 </section>
 <?php } ?>
 
-<?php if($title == 'our-teams') { ?>
+<?php if($title == 'expertise') { ?>
 <!-- Team -->
 <section id="team" class="team">
 	<div class="container">
